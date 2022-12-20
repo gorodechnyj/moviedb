@@ -1,0 +1,16 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="banner_corner_radius">8dp</dimen>
+    <dimen name="default_spacing">8dp</dimen>
+
+    <dimen name="product_grid_spacing">16dp</dimen>
+    <dimen name="product_filters_spacing">4dp</dimen>
+
+    <dimen name="text_size_min">12sp</dimen>
+    <dimen name="filter_count_text_size">13sp</dimen>
+    
+    <dimen name="image_size_small">60dp</dimen>
+    <dimen name="image_size_medium">80dp</dimen>
+</resources>

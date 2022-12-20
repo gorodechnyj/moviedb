@@ -1,0 +1,6 @@
+templatesRootDirPath: /templates
+modulesTemplatesRootDirPath: /modules_templates
+
+groupsNames:
+  forNewGroup: MVI Templates
+  forNewModulesGroup: MVI Modules

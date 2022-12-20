@@ -1,0 +1,41 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        maven {url 'https://developer.huawei.com/repo/'}
+    }
+}
+enableFeaturePreview("VERSION_CATALOGS")
+rootProject.name = "TMDB Android"
+include ':app'
+include ':core:api'
+include ':core:mvi'
+include ':core:mvi-ui'
+include ':core:logger'
+include ':core:navigation'
+include ':core:coroutine-util'
+include ':core:coroutine-android-util'
+include ':core:utils'
+include ':core:resources'
+include ':core:ui'
+include ':feature:home:api'
+include ':feature:home:android'
+include ':feature:home:domain'
+include ':feature:catalog:api'
+include ':feature:catalog:android'
+include ':feature:catalog:domain'
+include ':feature:favorites:api'
+include ':feature:favorites:android'
+include ':feature:favorites:domain'
+include ':data:network'
+include ':data:network:api'
+include ':data:data'
+include ':data:data:api'

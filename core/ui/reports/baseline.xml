@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<SmellBaseline>
+  <ManuallySuppressedIssues></ManuallySuppressedIssues>
+  <CurrentIssues>
+    <ID>TooGenericExceptionThrown:MenuBottomSheet.kt$MenuBottomSheet.Builder$throw Exception("You should call builder.setMenuRes or builder.setMenuItems")</ID>
+    <ID>TooManyFunctions:BaseAdapter.kt$BaseAdapter&lt;M, V : BaseViewHolder&lt;M&gt;&gt; : Adapter</ID>
+  </CurrentIssues>
+</SmellBaseline>

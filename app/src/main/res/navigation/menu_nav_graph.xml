@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/menu_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.gorodechnyj.moviedb.ui.HomeTabFragment"
+        android:label="Home" />
+
+    <fragment
+        android:id="@+id/navigation_catalog"
+        android:name="com.gorodechnyj.moviedb.ui.CatalogTabFragment"
+        android:label="Catalog" />
+
+    <fragment
+        android:id="@+id/navigation_favorites"
+        android:name="com.gorodechnyj.moviedb.ui.FavoritesTabFragment"
+        android:label="Favorites" />
+
+</navigation>

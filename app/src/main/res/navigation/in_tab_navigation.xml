@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/in_tab_navigation"
+    app:startDestination="@id/home">
+
+    <fragment
+        android:id="@+id/home"
+        android:name="com.gorodechnyj.moviedb.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/catalog"
+        android:name="com.gorodechnyj.moviedb.catalog.ui.CatalogFragment"
+        android:label="@string/title_catalog"
+        tools:layout="@layout/fragment_catalog">
+<!--        <action-->
+<!--            android:id="@+id/toProductDetails"-->
+<!--            app:destination="@id/productDetailsGraph">-->
+<!--            <argument-->
+<!--                android:name="args"-->
+<!--                app:argType="com.gorodechnyj.catalog.product.details.ProductDetailsArgs" />-->
+<!--        </action>-->
+    </fragment>
+
+    <fragment
+        android:id="@+id/favorites"
+        android:name="com.gorodechnyj.moviedb.favorites.FavoritesFragment"
+        android:label="@string/title_favorites"
+        tools:layout="@layout/fragment_favorites">
+<!--        <action-->
+<!--            android:id="@+id/toProductDetails"-->
+<!--            app:destination="@id/productDetailsGraph">-->
+<!--            <argument-->
+<!--                android:name="args"-->
+<!--                app:argType="com.gorodechnyj.catalog.product.details.ProductDetailsArgs" />-->
+<!--        </action>-->
+    </fragment>
+
+</navigation>

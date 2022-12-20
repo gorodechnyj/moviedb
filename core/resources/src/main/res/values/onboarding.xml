@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="onboarding_title">
+        <item>Быстрый и удобный поиск товаров</item>
+        <item>Выгодные покупки с бонусной картой</item>
+<!--        <item>Разрешите узнать, что вам интересно</item>-->
+        <item>Куда доставить?</item>
+        <item>Мы знакомы?</item>
+    </string-array>
+
+    <string-array name="onboarding_description">
+        <item>Более 25 000 товаров в каталоге с доставкой на дом или в ближайший магазин</item>
+        <item>Возвращаем до 7% бонусными рублями за каждый заказ</item>
+<!--        <item>Так мы сможем показывать персональные рекомендации и подборки товаров, которые понравятся вам и вашему питомцу</item>-->
+        <item>Укажите город, а мы покажем товары в наличии и актуальные условия доставки</item>
+        <item>Войдите в профиль, если вы уже совершали покупки в нашем приложении. Или зарегистрируйтесь, чтобы получить бонусную карту и совершать покупки с выгодой</item>
+    </string-array>
+
+    <string-array name="onboarding_main_action">
+        <item>Отлично</item>
+        <item>Отлично</item>
+<!--        <item>Продолжить</item>-->
+        <item>Определить город</item>
+        <item>Войти или зарегистрироваться</item>
+    </string-array>
+
+    <string-array name="onboarding_secondary_action">
+        <item />
+        <item />
+<!--        <item />-->
+        <item>Указать город вручную</item>
+        <item>Перейти к покупкам без входа</item>
+    </string-array>
+</resources>

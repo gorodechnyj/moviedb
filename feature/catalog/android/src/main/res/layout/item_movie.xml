@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/preview"
+        android:layout_width="128dp"
+        android:layout_height="128dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+    </ImageView>
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:textAppearance="@style/TextAppearance.Material3.HeadlineSmall"
+        app:layout_constraintStart_toEndOf="@id/preview"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Movie Title"/>
+
+    <TextView
+        android:id="@+id/titleOriginal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:textAppearance="@style/TextAppearance.Material3.LabelSmall"
+        app:layout_constraintStart_toEndOf="@id/preview"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title"
+        tools:text="Nomine Generale"/>
+
+    <TextView
+        android:id="@+id/ratingKinopoiskLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Рейтинг"
+        android:textAppearance="@style/TextAppearance.Material3.LabelMedium"
+        app:layout_constraintStart_toEndOf="@+id/preview"
+        app:layout_constraintTop_toBottomOf="@id/titleOriginal"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <RatingBar
+        android:id="@+id/kinopoiskRatingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        app:layout_constraintStart_toEndOf="@+id/ratingKinopoiskLabel"
+        app:layout_constraintTop_toTopOf="@id/ratingKinopoiskLabel"
+        app:layout_constraintBottom_toBottomOf="@id/ratingKinopoiskLabel"
+        style="@style/Widget.AppCompat.RatingBar.Small"/>
+
+    <TextView
+        android:id="@+id/ratingKinopoiskValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        app:layout_constraintStart_toEndOf="@id/kinopoiskRatingBar"
+        app:layout_constraintTop_toTopOf="@id/ratingKinopoiskLabel"
+        app:layout_constraintBottom_toBottomOf="@id/ratingKinopoiskLabel"
+        tools:text="4,7"/>
+
+    <TextView
+        android:id="@+id/ratingImdbLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="IMDB"
+        android:textAppearance="@style/TextAppearance.Material3.LabelMedium"
+        app:layout_constraintStart_toEndOf="@+id/preview"
+        app:layout_constraintTop_toBottomOf="@id/ratingKinopoiskLabel"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <TextView
+        android:id="@+id/ratingImdbValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        app:layout_constraintStart_toEndOf="@id/ratingImdbLabel"
+        app:layout_constraintTop_toTopOf="@id/ratingImdbLabel"
+        app:layout_constraintBottom_toBottomOf="@id/ratingImdbLabel"
+        tools:text="3,5"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

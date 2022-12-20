@@ -1,0 +1,72 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/moviedb_primary</item>
+        <item name="colorPrimaryVariant">@color/moviedb_primary</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/moviedb_secondary</item>
+        <item name="colorSecondaryVariant">@color/moviedb_secondary</item>
+        <item name="colorOnSecondary">@color/moviedb_primary</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="Theme.MovieDB" parent="Base"/>
+
+    <style name="Theme.MovieDB.White">
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorOnPrimary">@color/blue</item>
+    </style>
+
+    <style name="FullscreenDialogTheme" parent="Theme.MovieDB">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowIsFloating">false</item>
+    </style>
+
+    <style name="AppBar" parent="Widget.MaterialComponents.AppBarLayout.Surface">
+        <item name="elevation">0dp</item>
+    </style>
+
+    <style name="Toolbar" parent="Widget.MaterialComponents.Toolbar.Surface">
+    </style>
+
+    <style name="ThemeOverlay.App.Toolbar" parent="">
+        <item name="colorPrimary">@color/header</item>
+        <item name="colorOnPrimary">@color/text_main</item>
+    </style>
+
+    <style name="BottomSheetDialog" parent="Theme.MaterialComponents.Light.BottomSheetDialog">
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowSoftInputMode">adjustResize</item>
+        <item name="bottomSheetStyle">@style/BottomSheetStyle</item>
+        <item name="android:colorBackground">@color/white</item>
+        <item name="colorPrimary">@color/main</item>
+        <item name="android:textColor">@color/text_main</item>
+        <item name="materialButtonStyle">@style/ButtonStyle</item>
+    </style>
+
+    <style name="BottomSheetStyle" parent="Widget.MaterialComponents.BottomSheet.Modal">
+        <item name="backgroundTint">@android:color/transparent</item>
+    </style>
+
+    <style name="BottomSheetAppearanceOverlay" parent="ShapeAppearanceOverlay.MaterialComponents.BottomSheet">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeTopLeft">24dp</item>
+        <item name="cornerSizeTopRight">24dp</item>
+    </style>
+
+    <style name="BottomSheetPersistent" parent="Widget.MaterialComponents.BottomSheet.Modal">
+        <item name="shapeAppearanceOverlay">@style/BottomSheetAppearanceOverlay</item>
+        <item name="behavior_peekHeight">232dp</item>
+        <item name="behavior_hideable">false</item>
+        <item name="behavior_skipCollapsed">false</item>
+        <item name="behavior_fitToContents">false</item>
+        <item name="behavior_saveFlags">all</item>
+        <item name="behavior_expandedOffset">68dp</item>
+    </style>
+</resources>

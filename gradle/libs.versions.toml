@@ -1,0 +1,88 @@
+[versions]
+kotlin = "1.6.10"
+kotlinx = "1.6.0"
+appcompat = "1.4.1"
+navigation = "2.5.3"
+dagger = "2.44.2"
+hilt-ext = "1.0.0"
+glide = "4.12.0"
+room = "2.4.1"
+datastore = "1.0.0"
+datetime = "1.3.1"
+browser = "1.4.0"
+adapter = "4.3.2"
+
+[libraries]
+kotlin = { module = "org.jetbrains.kotlin:kotlin-stdlib", version.ref = "kotlin" }
+koltinx-coroutine = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "kotlinx" }
+koltinx-coroutine-jvm = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "kotlinx" }
+
+navigation-fragment = { module = "androidx.navigation:navigation-fragment-ktx", version.ref = "navigation" }
+navigation-ui = { module = "androidx.navigation:navigation-ui-ktx", version.ref = "navigation" }
+
+dagger-compiler = { module = "com.google.dagger:dagger-compiler", version.ref = "dagger" }
+dagger-android = { module = "com.google.dagger:dagger-android", version.ref = "dagger" }
+
+hilt-kapt = { module = "com.google.dagger:hilt-compiler", version.ref = "dagger" }
+hilt-androidx-compiler = { module = "androidx.hilt:hilt-compiler", version.ref = "hilt-ext" }
+hilt-android = { module = "com.google.dagger:hilt-android", version.ref = "dagger" }
+hilt-navigation-fragment = { module = "androidx.hilt:hilt-navigation-fragment", version.ref = "hilt-ext" }
+
+androidx-core = { module = "androidx.core:core-ktx", version = "1.7.0" }
+androidx-fragment = { module = "androidx.fragment:fragment-ktx", version = "1.4.0" }
+androidx-lifecycle-runtime = { module = "androidx.lifecycle:lifecycle-runtime-ktx", version = "2.4.0" }
+androidx-lifecycle-livedata = { module = "androidx.lifecycle:lifecycle-livedata-ktx", version = "2.4.0" }
+androidx-lifecycle-viewmodel = { module = "androidx.lifecycle:lifecycle-viewmodel-ktx", version = "2.4.0" }
+androidx-appcompat = { module = "androidx.appcompat:appcompat", version.ref = "appcompat" }
+androidx-constraints = { module = "androidx.constraintlayout:constraintlayout", version = "2.1.3" }
+androidx-viewbinding = { module = "com.redmadrobot.extensions:viewbinding-ktx", version = "4.2.1-0" }
+material-io = { module = "com.google.android.material:material", version = "1.5.0" }
+progress-button = { module = "com.github.razir.progressbutton:progressbutton", version = "2.1.0" }
+pagerindicator = { module = "me.relex:circleindicator", version = "2.1.6" }
+carousel = { module = "org.imaginativeworld.whynotimagecarousel:whynotimagecarousel", version = "2.0.2" }
+browser = { module = "androidx.browser:browser", version.ref = "browser"}
+adapter = { module = "com.hannesdorfmann:adapterdelegates4-kotlin-dsl", version.ref = "adapter" }
+adapter-viewbinding = { module = "com.hannesdorfmann:adapterdelegates4-kotlin-dsl-viewbinding", version.ref = "adapter" }
+
+glide-lib = { module = "com.github.bumptech.glide:glide", version.ref = "glide" }
+glide-compiler = { module = "com.github.bumptech.glide:compiler", version.ref = "glide" }
+glide-recyclerview = { module = "com.github.bumptech.glide:recyclerview-integration", version.ref = "glide" }
+
+room-runtime = { module = "androidx.room:room-runtime", version.ref = "room" }
+room-compiler = { module = "androidx.room:room-compiler", version.ref = "room" }
+room-ktx = { module = "androidx.room:room-ktx", version.ref = "room" }
+
+datastore-android = { module = "androidx.datastore:datastore", version.ref = "datastore" }
+tink = { module = "com.google.crypto.tink:tink-android", version = "1.6.1" }
+protobuf-lite = { module = "com.google.protobuf:protobuf-lite", version = "3.0.1" }
+
+location-google = { module = "com.google.android.gms:play-services-location", version = "17.0.0" }
+location-huawei = { module = "com.huawei.hms:location", version = "5.1.0.301" }
+
+datetime = { module = "com.jakewharton.threetenabp:threetenabp", version.ref = "datetime" }
+
+[bundles]
+kotlin = ["kotlin"]
+android = [
+    "androidx-core",
+    "androidx-fragment",
+    "androidx-lifecycle-runtime",
+    "androidx-lifecycle-livedata",
+    "androidx-lifecycle-viewmodel",
+    "androidx-appcompat",
+    "androidx-constraints",
+    "androidx-viewbinding",
+    "material-io",
+    "progress-button",
+    "adapter",
+    "adapter-viewbinding"
+]
+glide = ["glide-lib", "glide-recyclerview"]
+kotlinx = ["koltinx-coroutine", "koltinx-coroutine-jvm"]
+navigation = ["navigation-fragment", "navigation-ui"]
+dagger = ["dagger-android", "hilt-android"]
+dagger-navigation = ["hilt-navigation-fragment"]
+daggerkapt = ["dagger-compiler", "hilt-kapt", "hilt-androidx-compiler"]
+room = ["room-runtime", "room-ktx"]
+datastore = ["datastore-android", "tink"]
+carousel = ["pagerindicator", "carousel"]

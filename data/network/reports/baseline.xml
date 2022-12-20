@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<SmellBaseline>
+  <ManuallySuppressedIssues></ManuallySuppressedIssues>
+  <CurrentIssues>
+    <ID>TooGenericExceptionCaught:RefreshAuthenticator.kt$RefreshAuthenticator$t: Throwable</ID>
+    <ID>TooManyFunctions:NetworkApiModule.kt$NetworkApiModule</ID>
+  </CurrentIssues>
+</SmellBaseline>
